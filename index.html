@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Entrekids - Prueba Maqueta</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" href="css/ion.rangeSlider.css"> -->
+	<!-- <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"> -->
+
+    <!--ion-rangeSlider-->
+	<link href="js/ion-rangeSlider/css/ion.rangeSlider.css" rel="stylesheet"/>
+    <link href="js/ion-rangeSlider/css/ion-custom-slicklab.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" href="css/entrekids.css">
+</head>
+<body>
+	
+	<div class="container-fluid">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <a class="navbar-brand" href="#">
+			  	<img src="img/entrekids-logo.svg" alt="Entrekids" class="logo">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+						<div class="col-lg-10 col-md-10 form-contact-us">
+							<form class="needs-validation" novalidate>
+								<div class="form-row">
+									<div class="col-md-5 mb-3 mt-3">
+										<input type="text" class="form-control" id="validationCustom03" placeholder="Buscar actividades">
+								    </div>
+								
+								    <div class="col-md-5 mb-3 mt-3">
+								      <input type="text" class="form-control" id="validationCustom03" placeholder="Ubicación" required>
+								      <div class="invalid-feedback">
+								        Por favor, ingresa tu email.
+								      </div>
+								    </div>
+							  		<div class="col-md-2 mt-3 mt-3">
+							  			<button class="btn btn-primary" type="submit">
+							  				<i class="fas fa-search"></i>
+							  			</button>	
+							  		</div>
+							  	</div>
+							</form>
+						</div>
+
+				      </li>
+				    </ul>
+				    <ul class="navbar-nav ml-auto">
+						<li class="nav-item score-bg">
+							<i class="fas fa-apple-alt"></i>
+							<div class="score">
+								<p>999999</p>
+								<p class="text-right">puntos</p>
+							</div>
+						</li>
+						<li class="nav-item dropdown info-user">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          <span>(3)</span> María José <i class="fas fa-chevron-down"></i>
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+						</li>
+				    </ul>
+			  	</div>
+			</nav>
+		</div>
+
+		<div class="bg-ek row">
+			<div class="brand text-center">
+				Curabitur lobortis id lorem id bibendum. Ut id consectetur.
+			</div>
+
+			<div class="container mt-2">
+				<div class="row">
+					
+					<div class="col-12 col-md-12 col-lg-3 mb-2 mt-5">
+						
+						<div class="box-filter">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#calendar" role="tab" aria-controls="home" aria-selected="true">Calendario</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#list" role="tab" aria-controls="profile" aria-selected="false">Lista</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#map" role="tab" aria-controls="contact" aria-selected="false">Mapa</a>
+							  </li>
+							</ul>
+
+							<div class="subox-filter">
+
+								<nav class="navbar navbar-expand-lg navbar-light">
+								  <button class="navbar-toggler mb-4" type="button" data-toggle="collapse" data-target="#navbarFilters" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								    <i class="fas fa-filter"></i> Filtros
+								  </button>
+
+									<div class="collapse navbar-collapse" id="navbarFilters">
+									    
+										<div class="panel-body ion-list">
+											<div class="info"><input type="text" id="range_color_3" value="" name="range" /></div>
+										</div>
+
+										<div class="accordion" id="accordionExample">
+										  <div class="card">
+										    <div class="card-header" id="headingOne">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="btnOne">
+										          Ubicación <i class="fas fa-chevron-down"></i>
+										          <i class="fas fa-chevron-up d-none"></i>
+										        </button>
+										      </h5>
+										    </div>
+
+										    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card">
+										    <div class="card-header" id="headingTwo">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										          Edad
+										        </button>
+										      </h5>
+										    </div>
+										    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card">
+										    <div class="card-header" id="headingThree">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										          Categorías
+										        </button>
+										      </h5>
+										    </div>
+										    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										</div>
+								  	</div>
+								</nav>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-12 col-lg-9 mb-2 mt-5">
+					  <div class="box-content">
+						<div class="tabs-days">
+
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <ul class="nav nav-tabs prueba">
+									<li class="nav-item active">
+										<p>Dom</p>
+										<p>17/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Lun</p>
+										<p>18/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Mar</p>
+										<p>19/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Mie</p>
+										<p>20/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Jue</p>
+										<p>21/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Vie</p>
+										<p>22/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Sab</p>
+										<p>23/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Dom</p>
+										<p>24/6</p>
+									</li>
+								  </ul>
+							    </div>
+							    <div class="carousel-item">
+							       <ul class="nav nav-tabs">
+									<li class="nav-item">
+										<p>Dom</p>
+										<p>24/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Lun</p>
+										<p>25/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Mar</p>
+										<p>26/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Mie</p>
+										<p>27/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Jue</p>
+										<p>28/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Vie</p>
+										<p>29/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Sab</p>
+										<p>30/6</p>
+									</li>
+									<li class="nav-item">
+										<p>Dom</p>
+										<p>01/7</p>
+									</li>
+								  </ul>
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							    <span>
+							    	<i class="fas fa-angle-left"></i>
+							    </span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							    <span>
+							    	<i class="fas fa-angle-right"></i>
+							    </span>
+							  </a>
+							</div>
+						</div>
+						<div class="date text-center mt-3 mb-3">
+							<div class="row">
+								<div class="col-md-4 offset-md-3 text-right">Domingo, 17 de Junio</div>
+								<div class="col-md-4">
+									<form>
+										<div class="input-group">
+											<input type="text" class="form-control" id="search" aria-describedby="" placeholder="Buscar por actividad o proveedor">
+											<button type="submit" class="btn">
+											    <i class="fas fa-search"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-content" id="myTabContent">
+						  <div class="tab-pane fade show active" id="calendar" role="tabpanel" aria-labelledby="home-tab">
+						  	<div class="box-activity">
+						  		<div class="row">
+						  			<div class="col-md-3">
+						  				<figure>
+						  					<img src="img/coop-main.jpg" alt="">
+						  				</figure>
+						  			</div>
+						  			<div class="col-md-9 info-activity">
+						  				<div class="row">
+						  					<div class="col-md-5 pl-0">
+						  						<div class="title">Curabitur Cobortis convallis </div>
+						  						<div class="description">Suspendisse fermentum sem sagittis ante veni</div>
+						  						<div class="years">Edad: 8 - 12 años</div>
+						  						<div class="location">Providencia</div>
+						  					</div>
+						  					<div class="col-md-3 pl-0 pr-0">
+						  						<i class="fas fa-swimmer"></i>
+						  						<div class="time">
+						  							<p class="text-uppercase">10:00 am</p>
+						  							<p>99 min</p>
+						  							<p>Precio Entrekids: $99999</p>
+						  							<p>Precio Normal: $99999</p>
+						  						</div>
+						  					</div>
+						  					<div class="col-md-3 d-md-none d-lg-block">
+						  						<div class="see-more text-center mt-2">
+						  							<a href="" class="text-uppercase">Ver</a>
+						  							<p class="mt-4">9 cupos</p>
+						  						</div>
+						  					</div>
+
+						  					<div class="col-md-12">
+						  						<div class="reservations text-center mt-tres">
+						  							Reservaciones cerradas el 17/6 a las 8:00 AM
+						  						</div>
+						  					</div>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+
+						  	<div class="box-activity">
+						  		<div class="row">
+						  			<div class="col-md-3">
+						  				<figure>
+						  					<img src="img/coop-main.jpg" alt="">
+						  				</figure>
+						  			</div>
+						  			<div class="col-md-9 info-activity">
+						  				<div class="row">
+						  					<div class="col-md-5 pl-0">
+						  						<div class="title">Curabitur Cobortis convallis </div>
+						  						<div class="description">Suspendisse fermentum sem sagittis ante veni</div>
+						  						<div class="years">Edad: 8 - 12 años</div>
+						  						<div class="location">Providencia</div>
+						  					</div>
+						  					<div class="col-md-3 pl-0 pr-0">
+						  						<i class="fas fa-swimmer"></i>
+						  						<div class="time">
+						  							<p class="text-uppercase">10:00 am</p>
+						  							<p>99 min</p>
+						  							<p>Precio Entrekids: $99999</p>
+						  							<p>Precio Normal: $99999</p>
+						  						</div>
+						  					</div>
+						  					<div class="col-md-3 d-md-none d-lg-block">
+						  						<div class="see-more text-center mt-2">
+						  							<a href="" class="text-uppercase">Ver</a>
+						  							<p class="mt-4">9 cupos</p>
+						  						</div>
+						  					</div>
+
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+
+						  	<div class="box-activity">
+						  		<div class="row">
+						  			<div class="col-md-3">
+						  				<figure>
+						  					<img src="img/coop-main.jpg" alt="">
+						  				</figure>
+						  			</div>
+						  			<div class="col-md-9 info-activity">
+						  				<div class="row">
+						  					<div class="col-md-5 pl-0">
+						  						<div class="title">Curabitur Cobortis convallis </div>
+						  						<div class="description">Suspendisse fermentum sem sagittis ante veni</div>
+						  						<div class="years">Edad: 8 - 12 años</div>
+						  						<div class="location">Providencia</div>
+						  					</div>
+						  					<div class="col-md-3 pl-0 pr-0">
+						  						<i class="fas fa-swimmer"></i>
+						  						<div class="time">
+						  							<p class="text-uppercase">10:00 am</p>
+						  							<p>99 min</p>
+						  							<p>Precio Entrekids: $99999</p>
+						  							<p>Precio Normal: $99999</p>
+						  						</div>
+						  					</div>
+						  					<div class="col-md-3 d-md-none d-lg-block">
+						  						<div class="see-more text-center mt-2">
+						  							<a href="" class="text-uppercase">Ver</a>
+						  							<p class="mt-4">9 cupos</p>
+						  						</div>
+						  					</div>
+
+						  					<div class="col-md-12">
+						  						<div class="reservations text-center mt-tres">
+						  							Reservaciones cerradas el 17/6 a las 8:00 AM
+						  						</div>
+						  					</div>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+
+						  	<div class="register-user text-center mb-3">
+						  		<p>Para ver todas las actividades que Entrekids tiene para ti</p>
+						  		
+						  		<div class="btn-register-user mb-dospuntodos mt-2">
+						  			<a href="" class="register-user-link text-uppercase">Registrate</a>	
+						  		</div>
+						  		
+						  	</div>
+
+
+
+						  </div>
+						  <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="profile-tab">List</div>
+						  <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="contact-tab">Mapa</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+		<footer class="footer row text-uppercase">
+			<p class="text-center">2018 Entrekids ® Todos los derechos reservados</p>
+		</footer>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+	    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	    var forms = document.getElementsByClassName('needs-validation');
+	    // Loop over them and prevent submission
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
+	</script>
+
+	<!-- <script src="js/ion.rangeSlider.min.js"></script> -->
+	<!--ion-rangeSlider-->
+	<script src="js/ion-rangeSlider/js/ion.rangeSlider.js"></script>
+	<script src="js/ion-slider-init.js"></script>
+
+	<script src="js/js.js"></script>
+
+</body>
+</html>
