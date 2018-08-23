@@ -1,13 +1,20 @@
-// $("#btnOne").click(function(){
+$(".btnOne").click(function(){
 
-// 	// e.preventDefault();
+    if ($(this).hasClass('active') ) {
+    	
+    	console.log('1');
+    	$(this).removeClass('active');
+    	$(this).find('svg.fa-chevron-up').addClass('d-none').removeClass('d-block');
+    	$(this).find('svg.fa-chevron-down').addClass('d-block').removeClass('d-none');
 
-//     $(this).closest('.btn-link').find('d-none').removeClass('d-none').addClass('to-hide');
-//     $(this).closest('.accordionExample').find('.to-hide').addClass('d-none');
-
-//     console.log($(this).closest('.btn-link'));
-
-// });
+    } else {
+    	console.log('2');
+    	$(this).addClass('active');
+    	$(this).find('svg.fa-chevron-up').addClass('d-block').removeClass('d-none');
+    	$(this).find('svg.fa-chevron-down').addClass('d-none').removeClass('d-block');;
+    }
+    
+});
 
 $(".nav-item").click(function(){
 
