@@ -47,12 +47,12 @@ $(function () {
     });
     $("#range_color_4").ionRangeSlider({
         type: "double",
-        grid: true,
-        min: 0,
-        max: 1000,
-        from: 200,
-        to: 800,
-        prefix: "$"
+        grid: false,
+        min: 7,
+        max: 23,
+        from: 9,
+        to: 21,
+        prefix: ""
     });
     $("#range_color_5").ionRangeSlider({
         type: "double",
