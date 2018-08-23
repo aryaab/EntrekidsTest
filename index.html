@@ -34,20 +34,20 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item">
-						<div class="d-none d-sm-none d-md-block col-lg-10 col-md-10 form-contact-us">
+						<div class="d-none d-sm-none d-md-block col-lg-12 col-md-10 form-contact-us">
 							<form class="needs-validation" novalidate>
 								<div class="form-row">
-									<div class="col-md-5 mb-3 mt-3 pr-0">
+									<div class="col-lg-7 col-md-6 mb-3 mt-3 pr-0">
 										<input type="text" class="form-control" id="validationCustom03" placeholder="Buscar actividades">
 								    </div>
 								
-								    <div class="col-md-5 mb-3 mt-3 pl-0 pr-0">
+								    <div class="col-lg-3 col-md-4 mb-3 mt-3 pl-0 pr-0">
 								      <input type="text" class="form-control form-location" id="validationCustom03" placeholder="Ubicación" required>
 								      <div class="invalid-feedback">
 								        Por favor, ingresa tu email.
 								      </div>
 								    </div>
-							  		<div class="col-md-2 mt-3 mt-3 pl-0">
+							  		<div class="col-lg-1 col-md-1 mt-3 mt-3 pl-0">
 							  			<button class="btn btn-primary" type="submit">
 							  				<i class="fas fa-search"></i>
 							  			</button>	
@@ -104,7 +104,62 @@
 							  </li>
 							</ul>
 
-							<div class="subox-filter">
+							<div class="subox">
+								<div class="panel-body ion-list">
+									<div class="info">
+										<input type="text" id="range_color_3" value="" name="range" />
+									</div>
+								</div>
+
+								<div class="accordion" id="accordionExample">
+										  <div class="card">
+										    <div class="card-header" id="headingOne">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="btnOne">
+										          Ubicación <i class="fas fa-chevron-down"></i>
+										          <i class="fas fa-chevron-up d-none"></i>
+										        </button>
+										      </h5>
+										    </div>
+
+										    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card">
+										    <div class="card-header" id="headingTwo">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										          Edad
+										        </button>
+										      </h5>
+										    </div>
+										    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										  <div class="card">
+										    <div class="card-header" id="headingThree">
+										      <h5 class="mb-0">
+										        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										          Categorías
+										        </button>
+										      </h5>
+										    </div>
+										    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										      <div class="card-body">
+										        Anim pariatur cliche reprehenderit.
+										      </div>
+										    </div>
+										  </div>
+										</div>
+							</div>
+
+							<div class="subox-filter-menu d-none d-md-block d-lg-none">
 
 								<nav class="navbar navbar-expand-lg navbar-light">
 								  <button class="navbar-toggler mb-4" type="button" data-toggle="collapse" data-target="#navbarFilters" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,9 +167,11 @@
 								  </button>
 
 									<div class="collapse navbar-collapse" id="navbarFilters">
-									    
+										
 										<div class="panel-body ion-list">
-											<div class="info"><input type="text" id="range_color_3" value="" name="range" /></div>
+											<div class="info">
+												<input type="text" id="range_color_3" value="" name="range" />
+											</div>
 										</div>
 
 										<div class="accordion" id="accordionExample">
